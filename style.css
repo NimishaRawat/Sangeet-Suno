@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+body{
+    background-color: #455db2;
+}
+/* font-family: "Playwrite CU", system-ui; */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: "Ubuntu","Sofadi One", system-ui;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+.brand img{
+    width: 64px;
+    margin: 0;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+nav ul li {
+    padding: 0 20px;
+}
+
+.container{
+    min-height: 68vh;
+    background-color: black;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 15px;
+    padding: 25px;
+    background-image: url(backImage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin: 15px 0;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songsItemContainer{
+    margin: 20px;
+}
+
+.songItem{
+    height: 80px;
+    display: flex;
+    background-color: #e8f9ff;
+    width: 80%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    font-weight: bold;
+}
+.songItem img{
+    width: 70px;
+    margin: 0 23px;
+    border-radius: 20px;
+}
+
+.timestamp{
+    margin: 0 23px;
+    cursor: pointer;
+}
+
+.songInfo{
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+    width: 43px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
